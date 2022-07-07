@@ -24,13 +24,14 @@ function Table2(){
   return (
     <div className="App border border-success w-10">
       <h3>इयत्ता ६ ते ८</h3>
-      <input type="number" value={student1} onChange={students1} className="w-2" placeholder='येथे उपस्थित विद्यार्थी भरा'></input>
+      <input type="number" value={student1} onChange={students1} className="w-2" placeholder='येथे उपस्थित विद्यार्थी भरा' Style='margin-bottom:10px'></input>
       <table className="table table-striped border border-3" >
         <thead>
           <tr>
             <th scope="col">खाद्यपदार्थ</th>
-            <th scope="col">वजन (ग्राम)</th>
-            <th scope='col' >एकूण </th>
+            <th scope="col">वजन</th>
+            <th scope='col' >एकूण (ग्राम)</th>
+            <th scope="col">एकूण (किलो)</th>
           </tr>
         </thead>
         <tbody>
@@ -38,56 +39,69 @@ function Table2(){
             <td>तांदूळ</td>
             <td><input className="w-50" name='input1' type='number' onChange={e => onChnage(e)} value={state.input1}></input></td>
             <td>{(state.input1*student1).toFixed(2)}</td>
+            <td>{((state.input1*student1)/1000).toFixed(2)}</td>
           </tr>
           <tr>
             
             <td>तूरडाळ/मुंगडाळ/मसूरदाळ</td>
             <td><input className="w-50" name='input2' type='number' onChange={e => onChnage(e)} value={state.input2}></input></td>
             <td>{(state.input2*student1).toFixed(2)}</td>
+            <td>{((state.input2*student1)/1000).toFixed(2)}</td>
           </tr>
           <tr>
             
             <td >चवळी/मुग/मटकी/वाटणा/चना</td>
             <td ><input className="w-50" name='input3' type='number' onChange={e => onChnage(e)} value={state.input3} ></input></td>
             <td>{(state.input3*student1).toFixed(2)}</td>
+            <td>{((state.input3*student1)/1000).toFixed(2)}</td>
           </tr>
           <tr>
             
             <td>जिरा</td>
             <td><input className="w-50" name='input4' type='number' onChange={e => onChnage(e)} value={state.input4} ></input></td>
             <td>{(state.input4*student1).toFixed(2)}</td>
+            <td>{((state.input4*student1)/1000).toFixed(2)}</td>
           </tr>
           <tr>
            
             <td>मोहरी</td>
             <td><input className="w-50" name='input5' type='number' onChange={e => onChnage(e)} value={state.input5} ></input></td>
             <td>{(state.input5*student1).toFixed(2)}</td>
+            <td>{((state.input5*student1)/1000).toFixed(2)}</td>
           </tr>
           <tr>
            
             <td>हळद</td>
             <td><input className="w-50" name='input6' type='number' onChange={e => onChnage(e)} value={state.input6} ></input></td>
             <td>{(state.input6*student1).toFixed(2)}</td>
+            <td>{((state.input6*student1)/1000).toFixed(2)}</td>
           </tr>
           <tr>
             
             <td>मसाला</td>
             <td><input className="w-50" name='input7' type='number'  onChange={e => onChnage(e)} value={state.input7} ></input></td>
             <td>{(state.input7*student1).toFixed(2)}</td>
+            <td>{((state.input7*student1)/1000).toFixed(2)}</td>
           </tr>
           <tr>
             <td>मीठ</td>
             <td><input className="w-50" name='input8' type='number'  onChange={e => onChnage(e)} value={state.input8} ></input></td>
             <td>{(state.input8*student1).toFixed(2)}</td>
+            <td>{((state.input8*student1)/1000).toFixed(2)}</td>
           </tr>
-          <tr>
+         
+        </tbody>
+      </table>
+      <div Style='  margin: auto; width:20%;border: 1px solid grey;padding: 10px;'>
+      <table Style='margin-top:10px'>
+          <tr>         
             <td>तेल</td>
             <td><input className="w-50" name='input9' type='number' onChange={e => onChnage(e)} value={state.input9}></input></td>
             <td>{(state.input9*student1).toFixed(2)+ ' रु '}</td>
           </tr>
-        </tbody>
       </table>
-      <div className='d-flex justify-content-center'>
+      </div>
+      <div className='d-flex justify-content-center'  Style='margin-top:10px'>
       <div className=' card bg-light mb-3' Style='max-width: 18rem;'>
       <div className="card-header">६ ते ८ एकूण खर्च </div>
       <div className="card-body">
