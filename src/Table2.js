@@ -92,7 +92,7 @@ function Table2(){
          
         </tbody>
       </table>
-      <div Style='  margin: auto; width:20%;border: 1px solid grey;padding: 10px;'>
+      <div Style='  margin: auto; width:50%;border: 1px solid grey;padding: 10px;'>
       <table Style='margin-top:10px'>
           <tr>         
             <td>तेल</td>
