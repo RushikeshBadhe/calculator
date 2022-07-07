@@ -39,55 +39,55 @@ function Table2(){
             <td>तांदूळ</td>
             <td><input className="w-50" name='input1' type='number' onChange={e => onChnage(e)} value={state.input1}></input></td>
             <td>{(state.input1*student1).toFixed(2)}</td>
-            <td>{((state.input1*student1)/1000).toFixed(2)}</td>
+            <td>{((state.input1*student1)/1000).toFixed(5)}</td>
           </tr>
           <tr>
             
             <td>तूरडाळ/मुंगडाळ/मसूरदाळ</td>
             <td><input className="w-50" name='input2' type='number' onChange={e => onChnage(e)} value={state.input2}></input></td>
             <td>{(state.input2*student1).toFixed(2)}</td>
-            <td>{((state.input2*student1)/1000).toFixed(2)}</td>
+            <td>{((state.input2*student1)/1000).toFixed(5)}</td>
           </tr>
           <tr>
             
             <td >चवळी/मुग/मटकी/वाटणा/चना</td>
             <td ><input className="w-50" name='input3' type='number' onChange={e => onChnage(e)} value={state.input3} ></input></td>
             <td>{(state.input3*student1).toFixed(2)}</td>
-            <td>{((state.input3*student1)/1000).toFixed(2)}</td>
+            <td>{((state.input3*student1)/1000).toFixed(5)}</td>
           </tr>
           <tr>
             
             <td>जिरा</td>
             <td><input className="w-50" name='input4' type='number' onChange={e => onChnage(e)} value={state.input4} ></input></td>
             <td>{(state.input4*student1).toFixed(2)}</td>
-            <td>{((state.input4*student1)/1000).toFixed(2)}</td>
+            <td>{((state.input4*student1)/1000).toFixed(5)}</td>
           </tr>
           <tr>
            
             <td>मोहरी</td>
             <td><input className="w-50" name='input5' type='number' onChange={e => onChnage(e)} value={state.input5} ></input></td>
             <td>{(state.input5*student1).toFixed(2)}</td>
-            <td>{((state.input5*student1)/1000).toFixed(2)}</td>
+            <td>{((state.input5*student1)/1000).toFixed(5)}</td>
           </tr>
           <tr>
            
             <td>हळद</td>
             <td><input className="w-50" name='input6' type='number' onChange={e => onChnage(e)} value={state.input6} ></input></td>
             <td>{(state.input6*student1).toFixed(2)}</td>
-            <td>{((state.input6*student1)/1000).toFixed(2)}</td>
+            <td>{((state.input6*student1)/1000).toFixed(5)}</td>
           </tr>
           <tr>
             
             <td>मसाला</td>
             <td><input className="w-50" name='input7' type='number'  onChange={e => onChnage(e)} value={state.input7} ></input></td>
             <td>{(state.input7*student1).toFixed(2)}</td>
-            <td>{((state.input7*student1)/1000).toFixed(2)}</td>
+            <td>{((state.input7*student1)/1000).toFixed(5)}</td>
           </tr>
           <tr>
             <td>मीठ</td>
             <td><input className="w-50" name='input8' type='number'  onChange={e => onChnage(e)} value={state.input8} ></input></td>
             <td>{(state.input8*student1).toFixed(2)}</td>
-            <td>{((state.input8*student1)/1000).toFixed(2)}</td>
+            <td>{((state.input8*student1)/1000).toFixed(5)}</td>
           </tr>
          
         </tbody>
@@ -97,7 +97,7 @@ function Table2(){
           <tr>         
             <td>तेल</td>
             <td><input className="w-50" name='input9' type='number' onChange={e => onChnage(e)} value={state.input9}></input></td>
-            <td>{(state.input9*student1).toFixed(2)+ ' रु '}</td>
+            <td>{(state.input9*student1).toFixed(5)+ ' रु '}</td>
           </tr>
       </table>
       </div>
@@ -105,11 +105,10 @@ function Table2(){
       <div className=' card bg-light mb-3' Style='max-width: 18rem;'>
       <div className="card-header">६ ते ८ एकूण खर्च </div>
       <div className="card-body">
-      <p className="card-title" >{(student1*4.02).toFixed(2)+' रु'} </p>
+      <p className="card-title" >{(student1*4.02).toFixed(5)+' रु'} </p>
       </div>
       </div>
       </div>
-
       </div>
   )
 }
