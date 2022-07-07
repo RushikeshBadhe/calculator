@@ -105,7 +105,7 @@ function Table2(){
       <div className=' card bg-light mb-3' Style='max-width: 18rem;'>
       <div className="card-header">६ ते ८ एकूण खर्च </div>
       <div className="card-body">
-      <p className="card-title" >{(student1*4.02).toFixed(5)+' रु'} </p>
+      <p className="card-title" >{(student1*4.02).toFixed(2)+' रु'} </p>
       </div>
       </div>
       </div>
