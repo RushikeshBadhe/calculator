@@ -97,7 +97,7 @@ function Table2(){
           <tr>         
             <td>तेल</td>
             <td><input className="w-50" name='input9' type='number' onChange={e => onChnage(e)} value={state.input9}></input></td>
-            <td>{(state.input9*student1).toFixed(5)+ ' रु '}</td>
+            <td>{(state.input9*student1).toFixed(2)+ ' रु '}</td>
           </tr>
       </table>
       </div>
