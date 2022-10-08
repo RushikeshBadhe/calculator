@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import {AiOutlineLinkedin} from 'react-icons/ai'
 function Table2(){
   const [state, setState] = useState({ input1: 150, input2: 30, input3: 30, input4: 0.1, input5: 0.1, input6: 0.75, input7: 2.5, input8: 1.5,input9:1.18 });
   const [results, setResults] = useState({ gram: null, kg: null });
@@ -108,6 +109,10 @@ function Table2(){
       <p className="card-title" >{(student1*4.02).toFixed(2)+' रु'} </p>
       </div>
       </div>
+      </div>
+      <div  className='d-flex justify-content-end' Style='padding-right:1rem' >
+        created by: Rushikesh Badhe 
+        <a className='c-ico' href="https://www.linkedin.com/in/rushikesh-badhe-5882131a4/"> <AiOutlineLinkedin/></a>
       </div>
       </div>
   )
