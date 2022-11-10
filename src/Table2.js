@@ -110,8 +110,8 @@ function Table2(){
       </div>
       </div>
       </div>
-      <div  className='d-flex justify-content-end small' Style='padding-right:1rem' >
-        created by: Rushikesh Badhe 
+      <div  className='d-flex justify-content-end' Style='padding-right:1rem;font-size:0.575em' >
+        developed by: Rushikesh Badhe 
         <a className='c-ico' href="https://www.linkedin.com/in/rushikesh-badhe-5882131a4/"> <AiOutlineLinkedin/></a>
       </div>
       </div>
